@@ -11,7 +11,7 @@ import UIKit
 var todolist = [String]()
 
 
-class FirstViewController: UIViewController, UITableViewDelegate {
+class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var tableView: UITableView!
     
@@ -30,11 +30,8 @@ class FirstViewController: UIViewController, UITableViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    /*func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return todolist.count
-    }*/
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+   
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
         
         cell.textLabel?.text = todolist [indexPath.row]
@@ -44,7 +41,7 @@ class FirstViewController: UIViewController, UITableViewDelegate {
         return todolist.count
     }
     
-    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         
         if editingStyle == UITableViewCellEditingStyle.delete {
             todolist.remove(at:indexPath.row)
@@ -55,7 +52,7 @@ class FirstViewController: UIViewController, UITableViewDelegate {
     
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSectionsInTableView(_tableView: UITableView) -> Int {
         return 1
     }
     

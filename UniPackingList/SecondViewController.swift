@@ -12,6 +12,7 @@ var Todolist = [String]()
 class SecondViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var textfield: UITextField!
+    
     @IBAction func additem (sender: AnyObject) {
         todolist.append(textfield.text!)
         textfield.text = ""
@@ -40,7 +41,7 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }

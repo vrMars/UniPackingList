@@ -196,15 +196,18 @@
 				TargetAttributes = {
 					586659381D78FACD006A7451 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ZX4WLA2744;
 						LastSwiftMigration = 0800;
 					};
 					5866594E1D78FACD006A7451 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ZX4WLA2744;
 						LastSwiftMigration = 0800;
 						TestTargetID = 586659381D78FACD006A7451;
 					};
 					586659591D78FACD006A7451 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ZX4WLA2744;
 						LastSwiftMigration = 0800;
 						TestTargetID = 586659381D78FACD006A7451;
 					};
@@ -339,9 +342,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				"DEVELOPMENT_TEAM[sdk=*]" = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -386,6 +391,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -411,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZX4WLA2744;
 				INFOPLIST_FILE = UniPackingList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bitsmart.UniPackingList;
@@ -423,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZX4WLA2744;
 				INFOPLIST_FILE = UniPackingList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bitsmart.UniPackingList;
@@ -435,6 +443,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZX4WLA2744;
 				INFOPLIST_FILE = UniPackingListTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bitsmart.UniPackingListTests;
@@ -448,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZX4WLA2744;
 				INFOPLIST_FILE = UniPackingListTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bitsmart.UniPackingListTests;
@@ -460,6 +470,7 @@
 		5866596A1D78FACD006A7451 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = ZX4WLA2744;
 				INFOPLIST_FILE = UniPackingListUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bitsmart.UniPackingListUITests;
@@ -472,6 +483,7 @@
 		5866596B1D78FACD006A7451 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = ZX4WLA2744;
 				INFOPLIST_FILE = UniPackingListUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bitsmart.UniPackingListUITests;
